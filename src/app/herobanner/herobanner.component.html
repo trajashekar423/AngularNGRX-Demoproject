@@ -1,0 +1,34 @@
+<div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        @for (her of hero$ | async; track her.id){
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">{{her.banners}}</h1>
+        <p class="lead">{{her.bannersdec}}</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">{{her.button}}</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">{{her.button2}}</button>
+        </div>
+      </div>
+    }
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src="assets/ngrxlogo.png" alt="" width="100%">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    @for (her of hero$ | async; track her.id){
+    <div class="row featurette align-items-center flex-row-reverse">       
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">{{her.banners}} <span class="text-body-secondary">It’ll blow your mind.</span></h2>
+          <p class="lead">{{her.bannersdec}}</p>
+        </div>
+        <div class="col-md-5">
+        <img src="assets/ngrxlogo.png" class="w-100"/>
+        </div>
+        
+      </div>
+    }
+  </div>
