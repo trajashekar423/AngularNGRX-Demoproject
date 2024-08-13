@@ -1,0 +1,44 @@
+
+
+  
+
+
+
+
+  <header class="bg-light py-2 shadow-sm header-bg">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <!-- Logo and App Name with Divider -->
+        <div class="d-flex align-items-center">
+            <img src="assets/ngrxlogo.png" alt="Logo" class="mr-3 logo">
+          <div class="divider"></div> <!-- Divider -->
+          <h4 class="mb-0 d-none d-md-block">Application Name</h4> <!-- Hidden on small screens -->
+        </div>
+        <!-- Search Box -->
+     
+        <!-- Dynamic Icons with Links -->
+        <div class="header-icons d-flex">
+          <a *ngFor="let item of iconItems" [routerLink]="item.link" class="icon-link" title="{{ item.label }}">
+            <i class="fa fa-lg" [ngClass]="item.icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li *ngFor="let item of navItems" class="nav-item" [ngClass]="{ 'active': item.active }">
+            <a class="nav-link" [routerLink]="item.link" (click)="setActive(item)">{{ item.label }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  

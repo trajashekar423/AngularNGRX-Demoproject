@@ -49,9 +49,23 @@ Step 5
 check your redux devtool in chrome browser now you can use the initial store values
 
 
+
+
 Step 6 
 ------
 
+give name to reducer
+
+export const HeroBannerReducer = createReducer(
+    initialState,
+   
+);
+
+
+
+
+Step 7
+------
 export class HerobannerComponent {
   hero$?:Observable<Homebanner[]>;
   constructor(private store:Store<{hero:Homebanner[]}>){  
@@ -60,6 +74,6 @@ export class HerobannerComponent {
 }
 
 
-Step 7
+Step 8
 ------
 in html page

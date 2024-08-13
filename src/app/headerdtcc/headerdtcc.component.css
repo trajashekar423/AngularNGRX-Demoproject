@@ -1,0 +1,94 @@
+.logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .navbar-nav .nav-item.active .nav-link {
+    color: #000;
+    font-weight: bold;
+  }
+
+  .header-bg{
+    background-color: #0e5447 !important;
+    color: #fff;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 40px; /* Adds a 40px gap between navigation items */
+    font-size: 14px;
+  }
+  .navbar-nav .nav-item.active .nav-link {
+    color: #212121; /* Set the color of the active item */
+    border-bottom: 3px solid #f6c544; /* Add a border-bottom to the active item */
+    font-weight: bold; /* Optional: Make the active item bold */
+  }
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0; /* No margin on the last item */
+  }
+  .nav-link{
+    color: #000;
+  }
+  .bg-body-tertiary{
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  
+  
+  .fa i:last-child {
+    margin-right: 0; /* No margin on the last icon */
+  }
+
+  .fa{
+    margin-right: 16px;
+    font-size: 1.25rem !important;
+  }
+
+  .header-icons .icon-link {
+   
+    color: inherit; /* Ensures the icon color matches the theme */
+    text-decoration: none; /* Removes the underline from the links */
+  }
+
+
+  .nav-item{
+    text-transform: uppercase;
+  }
+
+  .divider {
+    height: 40px; /* Matches the height of the logo */
+    width: 1px; /* The thickness of the divider */
+    background-color: #ccc; /* Divider color */
+    margin-left: 15px; /* Space between the logo and the divider */
+    margin-right: 15px; /* Space between the divider and the application name */
+  }
+  
+  @media (max-width: 992px) { /* For medium screens and below */
+    .input-group {
+      width: 100%; /* Make search box full-width */
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) { /* For small screens */
+    .divider {
+      display: none; /* Hide divider on small screens */
+    }
+  
+    .header-icons {
+      justify-content: space-between; /* Spread icons evenly */
+      width: 100%;
+    }
+  
+    .icon-link {
+      margin-right: 0;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-right: 20px; /* Reduce gap between nav items */
+    }
+  
+    .navbar-nav {
+      justify-content: center; /* Center nav items */
+    }
+  }

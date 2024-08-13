@@ -5,11 +5,12 @@ import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HerobannerComponent } from "./herobanner/herobanner.component";
 import { HomeComponent } from "./home/home.component";
+import { HeaderdtccComponent } from "./headerdtcc/headerdtcc.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent, HerobannerComponent, HomeComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent, HerobannerComponent, HomeComponent, HeaderdtccComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

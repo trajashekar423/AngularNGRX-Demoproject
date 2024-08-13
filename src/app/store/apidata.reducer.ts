@@ -1,5 +1,6 @@
 import { createReducer } from '@ngrx/store';
 
+
 export interface Rating {
     rate: number;
     count: number;
